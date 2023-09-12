@@ -1,0 +1,6 @@
+framework module Pods_Fzofil {
+  umbrella header "Pods-Fzofil-umbrella.h"
+
+  export *
+  module * { export * }
+}

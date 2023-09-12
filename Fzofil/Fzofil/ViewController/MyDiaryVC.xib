@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Mali-SemiBold.ttf">
+            <string>Mali-SemiBold</string>
+        </array>
+        <array key="Mali-SemiBoldItalic.ttf">
+            <string>Mali-SemiBoldItalic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyDiaryVC" customModule="Fzofil" customModuleProvider="target">
+            <connections>
+                <outlet property="lblTime" destination="3QV-6p-mMm" id="dmI-io-6fo"/>
+                <outlet property="tbvDiary" destination="F1y-oZ-fPh" id="cTo-bH-V6R"/>
+                <outlet property="vEmpty" destination="J60-OG-H4Q" id="vMC-9W-nhN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iPA-hf-HNa">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Diary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9X-qF-q3F">
+                            <rect key="frame" x="28" y="22.999999999999996" width="123" height="36.666666666666657"/>
+                            <fontDescription key="fontDescription" name="Mali-SemiBold" family="Mali" pointSize="28"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YWH-Dl-Fl1">
+                            <rect key="frame" x="303" y="26.333333333333329" width="75" height="30"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="May 2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QV-6p-mMm">
+                                    <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
+                                    <fontDescription key="fontDescription" name="Mali-SemiBold" family="Mali" pointSize="16"/>
+                                    <color key="textColor" red="0.43529411764705883" green="0.32156862745098036" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kj4-Ly-3Wb">
+                                    <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <connections>
+                                        <action selector="actionSelectDate:" destination="-1" eventType="touchUpInside" id="3Ne-am-TzW"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="kj4-Ly-3Wb" secondAttribute="bottom" id="4Tc-Jb-MOe"/>
+                                <constraint firstItem="kj4-Ly-3Wb" firstAttribute="top" secondItem="YWH-Dl-Fl1" secondAttribute="top" id="GZs-cP-g10"/>
+                                <constraint firstAttribute="bottom" secondItem="3QV-6p-mMm" secondAttribute="bottom" id="H7C-lu-SPf"/>
+                                <constraint firstAttribute="trailing" secondItem="kj4-Ly-3Wb" secondAttribute="trailing" id="L7G-Sf-zJ7"/>
+                                <constraint firstItem="3QV-6p-mMm" firstAttribute="top" secondItem="YWH-Dl-Fl1" secondAttribute="top" id="XqL-Cv-h4f"/>
+                                <constraint firstItem="3QV-6p-mMm" firstAttribute="leading" secondItem="YWH-Dl-Fl1" secondAttribute="leading" id="a1F-dm-YQT"/>
+                                <constraint firstAttribute="trailing" secondItem="3QV-6p-mMm" secondAttribute="trailing" id="hdG-4X-4gW"/>
+                                <constraint firstItem="kj4-Ly-3Wb" firstAttribute="leading" secondItem="YWH-Dl-Fl1" secondAttribute="leading" id="sMd-0r-NEP"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="179" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="F1y-oZ-fPh">
+                            <rect key="frame" x="16" y="75.666666666666686" width="361" height="667.33333333333326"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J60-OG-H4Q">
+                            <rect key="frame" x="16" y="75.666666666666686" width="361" height="667.33333333333326"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_empty_diary" translatesAutoresizingMaskIntoConstraints="NO" id="YWB-VP-eFm">
+                                    <rect key="frame" x="139.66666666666666" y="200.00000000000003" width="82" height="99.999999999999972"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="100" id="0RR-Qn-SHi"/>
+                                        <constraint firstAttribute="width" constant="82" id="I9g-pC-fmQ"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You haven't created a diary yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iF0-am-ZEM">
+                                    <rect key="frame" x="60.666666666666686" y="324" width="240" height="20"/>
+                                    <fontDescription key="fontDescription" name="Mali-SemiBoldItalic" family="Mali" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="YWB-VP-eFm" firstAttribute="top" secondItem="J60-OG-H4Q" secondAttribute="top" constant="200" id="Rx3-vO-Z3M"/>
+                                <constraint firstItem="iF0-am-ZEM" firstAttribute="centerX" secondItem="J60-OG-H4Q" secondAttribute="centerX" id="U8g-iE-9FF"/>
+                                <constraint firstItem="YWB-VP-eFm" firstAttribute="centerX" secondItem="J60-OG-H4Q" secondAttribute="centerX" id="WnO-iB-sUy"/>
+                                <constraint firstItem="iF0-am-ZEM" firstAttribute="top" secondItem="YWB-VP-eFm" secondAttribute="bottom" constant="24" id="exd-Xk-oh0"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="J60-OG-H4Q" firstAttribute="trailing" secondItem="F1y-oZ-fPh" secondAttribute="trailing" id="2WY-g6-YAF"/>
+                        <constraint firstItem="F1y-oZ-fPh" firstAttribute="leading" secondItem="iPA-hf-HNa" secondAttribute="leading" constant="16" id="KTD-4b-9Rl"/>
+                        <constraint firstItem="YWH-Dl-Fl1" firstAttribute="centerY" secondItem="P9X-qF-q3F" secondAttribute="centerY" id="KyB-Jt-WXX"/>
+                        <constraint firstAttribute="bottom" secondItem="F1y-oZ-fPh" secondAttribute="bottom" constant="16" id="TtD-WA-ZvY"/>
+                        <constraint firstAttribute="trailing" secondItem="YWH-Dl-Fl1" secondAttribute="trailing" constant="15" id="UkX-mZ-qby"/>
+                        <constraint firstItem="F1y-oZ-fPh" firstAttribute="top" secondItem="P9X-qF-q3F" secondAttribute="bottom" constant="16" id="Vuu-ye-bAw"/>
+                        <constraint firstItem="J60-OG-H4Q" firstAttribute="leading" secondItem="F1y-oZ-fPh" secondAttribute="leading" id="WIF-54-df2"/>
+                        <constraint firstItem="J60-OG-H4Q" firstAttribute="bottom" secondItem="F1y-oZ-fPh" secondAttribute="bottom" id="Xdm-kl-CUq"/>
+                        <constraint firstItem="P9X-qF-q3F" firstAttribute="top" secondItem="iPA-hf-HNa" secondAttribute="top" constant="23" id="XjO-Ex-pcz"/>
+                        <constraint firstItem="P9X-qF-q3F" firstAttribute="leading" secondItem="iPA-hf-HNa" secondAttribute="leading" constant="28" id="cfa-NQ-zkE"/>
+                        <constraint firstAttribute="trailing" secondItem="F1y-oZ-fPh" secondAttribute="trailing" constant="16" id="j5G-Mu-IdG"/>
+                        <constraint firstItem="J60-OG-H4Q" firstAttribute="top" secondItem="F1y-oZ-fPh" secondAttribute="top" id="lac-zI-jQK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.95294117647058818" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iPA-hf-HNa" secondAttribute="trailing" id="0bs-cl-gs0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="iPA-hf-HNa" secondAttribute="bottom" id="6sz-bA-2eh"/>
+                <constraint firstItem="iPA-hf-HNa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="TsD-pm-uE7"/>
+                <constraint firstItem="iPA-hf-HNa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fWl-py-RQW"/>
+            </constraints>
+            <point key="canvasLocation" x="36" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_empty_diary" width="328" height="400"/>
+    </resources>
+</document>

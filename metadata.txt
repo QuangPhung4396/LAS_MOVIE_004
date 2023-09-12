@@ -1,0 +1,28 @@
+com.fzofil.diary
+
+Fzofil
+
+Fzofil Diary
+Easily you notes movie infos
+
+note,emoji,tracking,list,ranking,moviebox,movie,top,rate,details,showbox,hub,watched,box
+
+
+Welcome to Fzofil Diary : The ultimate movie tracking app
+With Fzofil Diary you can effortlessly manage your movie watchlist and keep track of the movies you've watched.
+Create diary and notes with beautiful icons, you can choose many cute icons according to your feeling
+
+FEATURES
+- Elegant and simple UI for manage diary & note.
+- Track and discover Movies and TV Shows
+- Create note or diary easily with emotional icons, so you can save information about your favorite movie & show
+- Attach image to your note, along with location, and rate the movie by your self
+- Statistics of watched movies in graph form with icons showing your feelings and reviews about the movie & TV Show
+
+Join now and build your own diary.
+
+
+DISCLAIMER
+- This app is not for streaming/watching movies. It only help you find the movies & TV Show, so you can create the notes and diary by your self
+- All movies information and images are from TMDB.org licensed under CC BY-NC 4.0: https://creativecommons.org/licenses/by-nc/4.0/
+- We use the TMDB API, but it is not endorsed or certified by TMDB: https://www.themoviedb.org/documentation/api/term-of-use

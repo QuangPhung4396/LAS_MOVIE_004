@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Mali-SemiBold.ttf">
+            <string>Mali-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="116" id="KGk-i7-Jjw" customClass="SeachCell" customModule="Fzofil" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WSr-2x-fRc">
+                        <rect key="frame" x="0.0" y="12" width="320" height="104"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ELT-kI-IRv" customClass="PView" customModule="Fzofil" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="54" height="82"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j79-2Q-tWa">
+                                        <rect key="frame" x="0.0" y="0.0" width="54" height="82"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="j79-2Q-tWa" firstAttribute="leading" secondItem="ELT-kI-IRv" secondAttribute="leading" id="FQp-yc-m5X"/>
+                                    <constraint firstAttribute="bottom" secondItem="j79-2Q-tWa" secondAttribute="bottom" id="FgF-NW-ka3"/>
+                                    <constraint firstAttribute="height" constant="82" id="Jge-QF-VqP"/>
+                                    <constraint firstItem="j79-2Q-tWa" firstAttribute="top" secondItem="ELT-kI-IRv" secondAttribute="top" id="Km3-FT-hlz"/>
+                                    <constraint firstAttribute="trailing" secondItem="j79-2Q-tWa" secondAttribute="trailing" id="Yt6-Rb-vZL"/>
+                                    <constraint firstAttribute="width" constant="54" id="g5s-8L-75w"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isRoundConner" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gadar 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQX-TK-Y1O">
+                                <rect key="frame" x="68" y="30.666666666666664" width="65" height="21"/>
+                                <fontDescription key="fontDescription" name="Mali-SemiBold" family="Mali" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xbt-lb-uQh">
+                                <rect key="frame" x="0.0" y="103" width="320" height="1"/>
+                                <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ya1-B1-GTa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="xbt-lb-uQh" secondAttribute="bottom" id="2wT-CA-H75"/>
+                            <constraint firstItem="OQX-TK-Y1O" firstAttribute="leading" secondItem="ELT-kI-IRv" secondAttribute="trailing" constant="14" id="Dkd-eQ-OFb"/>
+                            <constraint firstItem="OQX-TK-Y1O" firstAttribute="centerY" secondItem="ELT-kI-IRv" secondAttribute="centerY" id="Emc-6v-rni"/>
+                            <constraint firstItem="xbt-lb-uQh" firstAttribute="leading" secondItem="WSr-2x-fRc" secondAttribute="leading" id="fLs-oM-TcV"/>
+                            <constraint firstItem="ELT-kI-IRv" firstAttribute="leading" secondItem="WSr-2x-fRc" secondAttribute="leading" id="iru-IA-hAT"/>
+                            <constraint firstItem="ELT-kI-IRv" firstAttribute="top" secondItem="WSr-2x-fRc" secondAttribute="top" id="oh0-Nv-tLn"/>
+                            <constraint firstAttribute="trailing" secondItem="xbt-lb-uQh" secondAttribute="trailing" id="pab-x4-6En"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="WSr-2x-fRc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3bd-gR-gBM"/>
+                    <constraint firstItem="WSr-2x-fRc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="BJJ-2d-SgC"/>
+                    <constraint firstAttribute="trailing" secondItem="WSr-2x-fRc" secondAttribute="trailing" id="azJ-cQ-upy"/>
+                    <constraint firstAttribute="bottom" secondItem="WSr-2x-fRc" secondAttribute="bottom" id="wOV-Lq-Z8U"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="ivPoster" destination="j79-2Q-tWa" id="xhj-cC-2Uy"/>
+                <outlet property="lblName" destination="OQX-TK-Y1O" id="bz3-mz-gBj"/>
+                <outlet property="vLine" destination="xbt-lb-uQh" id="GrN-Lw-G3i"/>
+            </connections>
+            <point key="canvasLocation" x="42.748091603053432" y="14.084507042253522"/>
+        </tableViewCell>
+    </objects>
+</document>
