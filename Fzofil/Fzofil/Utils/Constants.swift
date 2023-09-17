@@ -8,6 +8,46 @@
 import Foundation
 public let NAME_FILE_EDIT_SAVE = "list_move_save.json"
 
+#if DEBUG
+    public let admod_banner = "ca-app-pub-3940256099942544/2934735716"
+    public let admod_interstital = "ca-app-pub-3940256099942544/4411468910"
+    public let admod_interstital_splash = "ca-app-pub-3940256099942544/4411468910"
+    public let admod_reward = ""
+    public let admod_reward_interstital = ""
+    public let admod_small_native = "ca-app-pub-3940256099942544/3986624511"
+    public let admod_medium_native = "ca-app-pub-3940256099942544/3986624511"
+    public let admod_manual_native = "ca-app-pub-3940256099942544/3986624511"
+    public let admod_app_open = "ca-app-pub-3940256099942544/3419835294"
+
+    public let max_banner = ""
+    public let max_interstital = ""
+    public let max_splash = ""
+    public let max_reward = ""
+    public let max_small_native = ""
+    public let max_medium_native = ""
+    public let max_manual_native = ""
+    public let max_app_open = ""
+#else
+    public let admod_banner = "ca-app-pub-2299291161271404/9078447157"
+    public let admod_interstital = "ca-app-pub-2299291161271404/3831109468"
+    public let admod_interstital_splash = "ca-app-pub-2299291161271404/4401955100"
+    public let admod_reward = "ca-app-pub-2299291161271404/1862302118"
+    public let admod_reward_interstital = "ca-app-pub-2299291161271404/9994823444"
+    public let admod_small_native = "ca-app-pub-2299291161271404/6265701111"
+    public let admod_medium_native = "ca-app-pub-2299291161271404/2892312758"
+    public let admod_manual_native = "ca-app-pub-2299291161271404/9715621848"
+    public let admod_app_open = "ca-app-pub-2299291161271404/4210383412"
+
+    public let max_banner = "3eb762231add8fd4"
+    public let max_interstital = "1f9b403d5a8f0266"
+    public let max_splash = "7c52d1e6f4119b34"
+    public let max_reward = "f52a6e7ec0d5f595"
+    public let max_small_native = "744d9c44cd7974b3"
+    public let max_medium_native = "a56577ce4a8ab52f"
+    public let max_manual_native = "f87d026a16f42b00"
+    public let max_app_open = "ce77fd5e1afa39d0"
+#endif
+
 func getMonthAndYearFromDate(date: Date,completion: ((Int, Int) -> Void?)) {
     let calendar = Calendar.current
     let year = calendar.component(.year, from: date)

@@ -18,9 +18,9 @@
                 <outlet property="lblName" destination="bLF-87-RPX" id="P2C-eG-PN9"/>
                 <outlet property="leadingPagerContrant" destination="vLL-UF-jQe" id="fu0-85-Ydd"/>
                 <outlet property="pagerView" destination="aF9-Iz-pjm" id="sct-zu-7as"/>
-                <outlet property="ratioPager" destination="ci2-iD-Q7v" id="vOv-mg-c3q"/>
                 <outlet property="trailingPagerContrant" destination="ra0-Mo-okV" id="0Ux-0N-yHw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewNativeAds" destination="gRC-nZ-3kg" id="fRD-jn-hbi"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -32,13 +32,13 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Diary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8DD-uF-HXS">
-                            <rect key="frame" x="28" y="22.999999999999996" width="166" height="36.666666666666657"/>
+                            <rect key="frame" x="28" y="8" width="166" height="36.666666666666664"/>
                             <fontDescription key="fontDescription" name="Mali-SemiBold" family="Mali" pointSize="28"/>
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVf-vS-xzH">
-                            <rect key="frame" x="337" y="23" width="40" height="40"/>
+                            <rect key="frame" x="337" y="8" width="40" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="40" id="2GG-X5-Yc9"/>
                                 <constraint firstAttribute="width" secondItem="DVf-vS-xzH" secondAttribute="height" id="PbG-dm-FaV"/>
@@ -50,7 +50,7 @@
                             </connections>
                         </button>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="J6J-17-0fy">
-                            <rect key="frame" x="100.33333333333333" y="720" width="192.66666666666669" height="23"/>
+                            <rect key="frame" x="100.33333333333333" y="728" width="192.66666666666669" height="23"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_swipe" translatesAutoresizingMaskIntoConstraints="NO" id="6TW-Va-dYQ">
                                     <rect key="frame" x="0.0" y="0.0" width="20" height="23"/>
@@ -67,15 +67,20 @@
                                 </label>
                             </subviews>
                         </stackView>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aF9-Iz-pjm" customClass="FSPagerView" customModule="FSPagerView">
-                            <rect key="frame" x="35" y="92.666666666666629" width="323" height="434"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gRC-nZ-3kg">
+                            <rect key="frame" x="16" y="56" width="361" height="0.0"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="width" secondItem="aF9-Iz-pjm" secondAttribute="height" multiplier="335:450" id="ci2-iD-Q7v"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="2o0-b6-37y"/>
+                                <constraint firstAttribute="height" priority="250" id="5M3-op-uuG"/>
                             </constraints>
                         </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aF9-Iz-pjm" customClass="FSPagerView" customModule="FSPagerView">
+                            <rect key="frame" x="35" y="64" width="323" height="601"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spider-Man: Across the Spider-Verse" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLF-87-RPX">
-                            <rect key="frame" x="60" y="542.66666666666663" width="273" height="47"/>
+                            <rect key="frame" x="60" y="673" width="273" height="47"/>
                             <fontDescription key="fontDescription" name="Mali-SemiBold" family="Mali" pointSize="18"/>
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -84,18 +89,22 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="bLF-87-RPX" firstAttribute="leading" secondItem="aF9-Iz-pjm" secondAttribute="leading" constant="25" id="2xz-eY-8AM"/>
-                        <constraint firstAttribute="bottom" secondItem="J6J-17-0fy" secondAttribute="bottom" constant="16" id="5pF-lZ-4tl"/>
+                        <constraint firstAttribute="bottom" secondItem="J6J-17-0fy" secondAttribute="bottom" constant="8" id="5pF-lZ-4tl"/>
                         <constraint firstItem="8DD-uF-HXS" firstAttribute="leading" secondItem="OWS-WK-ObO" secondAttribute="leading" constant="28" id="8p3-wv-Lnq"/>
-                        <constraint firstItem="8DD-uF-HXS" firstAttribute="top" secondItem="OWS-WK-ObO" secondAttribute="top" constant="23" id="LYF-zS-eJH"/>
-                        <constraint firstItem="bLF-87-RPX" firstAttribute="top" secondItem="aF9-Iz-pjm" secondAttribute="bottom" constant="16" id="PtB-aU-wr0"/>
-                        <constraint firstItem="DVf-vS-xzH" firstAttribute="top" secondItem="OWS-WK-ObO" secondAttribute="top" constant="23" id="Uyi-34-uyk"/>
+                        <constraint firstItem="J6J-17-0fy" firstAttribute="top" secondItem="bLF-87-RPX" secondAttribute="bottom" constant="8" id="91l-mh-gdD"/>
+                        <constraint firstItem="gRC-nZ-3kg" firstAttribute="top" secondItem="DVf-vS-xzH" secondAttribute="bottom" constant="8" id="IGG-Lf-QLF"/>
+                        <constraint firstItem="8DD-uF-HXS" firstAttribute="top" secondItem="OWS-WK-ObO" secondAttribute="top" constant="8" id="LYF-zS-eJH"/>
+                        <constraint firstItem="bLF-87-RPX" firstAttribute="top" secondItem="aF9-Iz-pjm" secondAttribute="bottom" constant="8" id="PtB-aU-wr0"/>
+                        <constraint firstItem="DVf-vS-xzH" firstAttribute="top" secondItem="OWS-WK-ObO" secondAttribute="top" constant="8" id="Uyi-34-uyk"/>
                         <constraint firstItem="aF9-Iz-pjm" firstAttribute="centerX" secondItem="OWS-WK-ObO" secondAttribute="centerX" id="XF6-YT-Mxf"/>
                         <constraint firstItem="J6J-17-0fy" firstAttribute="centerX" secondItem="OWS-WK-ObO" secondAttribute="centerX" id="bCf-dw-vkG"/>
+                        <constraint firstItem="gRC-nZ-3kg" firstAttribute="leading" secondItem="OWS-WK-ObO" secondAttribute="leading" constant="16" id="bWQ-rS-sxu"/>
                         <constraint firstAttribute="trailing" secondItem="DVf-vS-xzH" secondAttribute="trailing" constant="16" id="iWc-Pe-jjX"/>
                         <constraint firstItem="bLF-87-RPX" firstAttribute="trailing" secondItem="aF9-Iz-pjm" secondAttribute="trailing" constant="-25" id="kip-50-bvy"/>
-                        <constraint firstItem="aF9-Iz-pjm" firstAttribute="top" secondItem="8DD-uF-HXS" secondAttribute="bottom" constant="33" id="oOt-HM-FoM"/>
                         <constraint firstAttribute="trailing" secondItem="aF9-Iz-pjm" secondAttribute="trailing" constant="35" id="ra0-Mo-okV"/>
                         <constraint firstItem="aF9-Iz-pjm" firstAttribute="leading" secondItem="OWS-WK-ObO" secondAttribute="leading" constant="35" id="vLL-UF-jQe"/>
+                        <constraint firstAttribute="trailing" secondItem="gRC-nZ-3kg" secondAttribute="trailing" constant="16" id="wMc-PS-laR"/>
+                        <constraint firstItem="aF9-Iz-pjm" firstAttribute="top" secondItem="gRC-nZ-3kg" secondAttribute="bottom" constant="8" id="yqP-Nb-Tec"/>
                     </constraints>
                 </view>
             </subviews>

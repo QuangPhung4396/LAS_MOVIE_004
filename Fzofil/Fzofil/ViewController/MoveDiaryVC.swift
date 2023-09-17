@@ -7,6 +7,7 @@
 
 import UIKit
 import FSPagerView
+import GoogleMobileAds
 
 class MoveDiaryVC: BaseViewController,FSPagerViewDataSource,FSPagerViewDelegate,UIScrollViewDelegate{
     private var photos: [DMoviesDetail] = []
@@ -14,13 +15,19 @@ class MoveDiaryVC: BaseViewController,FSPagerViewDataSource,FSPagerViewDelegate,
     
     @IBOutlet weak var leadingPagerContrant: NSLayoutConstraint!
     @IBOutlet weak var trailingPagerContrant: NSLayoutConstraint!
-    @IBOutlet weak var ratioPager: NSLayoutConstraint!
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var pagerView: FSPagerView! {
         didSet {
             self.pagerView.register(FSPagerViewCell.self, forCellWithReuseIdentifier: "cell")
         }
     }
+    
+    @IBOutlet weak var viewNativeAds: UIView!
+    
+    var adLoader: GADAdLoader!
+    var nativeAdView: NativeSmallAdView!
+    var nativeAd: GADNativeAd?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         pagerView.delegate = self
@@ -34,8 +41,23 @@ class MoveDiaryVC: BaseViewController,FSPagerViewDataSource,FSPagerViewDelegate,
         }
        callAPI()
         
-        // Do any additional setup after loading the view.
+        adLoader = GADAdLoader(adUnitID: admod_small_native, rootViewController: self,
+                               adTypes: [ .native ], options: nil)
+        adLoader!.delegate = self
+        adLoader!.load(GADRequest())
     }
+    
+    func setAdView(_ view: NativeSmallAdView) {
+        nativeAdView = view
+        self.viewNativeAds.addSubview(nativeAdView)
+        nativeAdView.translatesAutoresizingMaskIntoConstraints = false
+        let viewDictionary = ["_nativeAdView": nativeAdView!]
+        self.viewNativeAds.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[_nativeAdView]|",
+                                                                options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: viewDictionary))
+        self.viewNativeAds.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[_nativeAdView]|",
+                                                                options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: viewDictionary))
+    }
+    
     func callAPI() {
         showLoading()
         DApiManage.getInstance.getMovieTopRate(page: page, showLoading: true) { [self] data in
@@ -54,12 +76,7 @@ class MoveDiaryVC: BaseViewController,FSPagerViewDataSource,FSPagerViewDelegate,
             self.hideLoading()
         }
     }
-//    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-//           let bottomEdge = scrollView.contentOffset.y + scrollView.frame.size.height
-//           if bottomEdge >= scrollView.contentSize.height {
-//               callAPI()
-//           }
-//       }
+
     // MARK:- FSPagerViewDataSource
     
     
@@ -70,7 +87,7 @@ class MoveDiaryVC: BaseViewController,FSPagerViewDataSource,FSPagerViewDelegate,
     public func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSPagerViewCell {
         let cell = pagerView.dequeueReusableCell(withReuseIdentifier: "cell", at: index)
         let model = self.photos[index]
-        let uiView = FsWipeView(frame: CGRect(x: 0, y: 0, width: self.pagerView.layer.bounds.size.width, height: self.pagerView.layer.bounds.size.height))
+        let uiView = FsWipeView(frame: CGRect(x: 0, y: 0, width: self.pagerView.layer.frame.size.width, height: self.pagerView.layer.frame.size.height))
         uiView.ivProfile.setImage(imageUrl: model.poster_path)
         cell.backgroundColor = .clear
         cell.addSubview(uiView)
@@ -97,4 +114,24 @@ class MoveDiaryVC: BaseViewController,FSPagerViewDataSource,FSPagerViewDelegate,
         self.navigationController?.pushViewController(vc, animated: true)
     }
 
+}
+
+extension MoveDiaryVC : GADNativeAdLoaderDelegate, GADAdLoaderDelegate {
+    func adLoader(_ adLoader: GADAdLoader, didFailToReceiveAdWithError error: Error) {
+    }
+    
+    func adLoader(_ adLoader: GADAdLoader, didReceive nativeAd: GADNativeAd) {
+        guard let nibObjects = Bundle.main.loadNibNamed("NativeSmallAdView", owner: nil, options: nil),
+            let adView = nibObjects.first as? NativeSmallAdView else {
+                assert(false, "Could not load nib file for adView")
+                return
+        }
+        
+        setAdView(adView)
+        
+        self.nativeAd = nativeAd
+        nativeAdView.setViewForAds(nativeAd: self.nativeAd!)
+        self.pagerView.layoutIfNeeded()
+        self.pagerView.reloadData()
+    }
 }

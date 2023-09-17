@@ -59,6 +59,13 @@
 		740C36A42AB0A015009461F4 /* DApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740C36752AB0A015009461F4 /* DApiManager.swift */; };
 		740C36A52AB0A015009461F4 /* ApiDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740C36762AB0A015009461F4 /* ApiDefines.swift */; };
 		740C36A72AB0A59E009461F4 /* EmailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740C36A62AB0A59E009461F4 /* EmailService.swift */; };
+		74863F142AB5B8EA00763F1C /* AdmodOpen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74863F122AB5B8EA00763F1C /* AdmodOpen.swift */; };
+		74863F152AB5B8EA00763F1C /* AdmodSplash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74863F132AB5B8EA00763F1C /* AdmodSplash.swift */; };
+		74863F182AB5B8FE00763F1C /* NativeSmallAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74863F162AB5B8FE00763F1C /* NativeSmallAdView.xib */; };
+		74863F192AB5B8FE00763F1C /* NativeSmallAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74863F172AB5B8FE00763F1C /* NativeSmallAdView.swift */; };
+		74863F1C2AB5B98B00763F1C /* SplashVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74863F1A2AB5B98B00763F1C /* SplashVC.xib */; };
+		74863F1D2AB5B98B00763F1C /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74863F1B2AB5B98B00763F1C /* SplashVC.swift */; };
+		74863F1F2AB5B9BF00763F1C /* anim_loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 74863F1E2AB5B9BF00763F1C /* anim_loading.json */; };
 		CE7783ABD080CB7B149960FB /* Pods_Fzofil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B72517D3F49FC2504F15F88E /* Pods_Fzofil.framework */; };
 /* End PBXBuildFile section */
 
@@ -119,6 +126,13 @@
 		740C36752AB0A015009461F4 /* DApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DApiManager.swift; sourceTree = "<group>"; };
 		740C36762AB0A015009461F4 /* ApiDefines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiDefines.swift; sourceTree = "<group>"; };
 		740C36A62AB0A59E009461F4 /* EmailService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailService.swift; sourceTree = "<group>"; };
+		74863F122AB5B8EA00763F1C /* AdmodOpen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdmodOpen.swift; sourceTree = "<group>"; };
+		74863F132AB5B8EA00763F1C /* AdmodSplash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdmodSplash.swift; sourceTree = "<group>"; };
+		74863F162AB5B8FE00763F1C /* NativeSmallAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeSmallAdView.xib; sourceTree = "<group>"; };
+		74863F172AB5B8FE00763F1C /* NativeSmallAdView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeSmallAdView.swift; sourceTree = "<group>"; };
+		74863F1A2AB5B98B00763F1C /* SplashVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashVC.xib; sourceTree = "<group>"; };
+		74863F1B2AB5B98B00763F1C /* SplashVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		74863F1E2AB5B9BF00763F1C /* anim_loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = anim_loading.json; sourceTree = "<group>"; };
 		B72517D3F49FC2504F15F88E /* Pods_Fzofil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fzofil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -172,6 +186,7 @@
 		740C36282AB09D69009461F4 /* Fzofil */ = {
 			isa = PBXGroup;
 			children = (
+				74863F112AB5B8EA00763F1C /* Ads */,
 				740C36662AB0A015009461F4 /* Cell */,
 				740C36582AB0A015009461F4 /* CustomView */,
 				740C366D2AB0A015009461F4 /* Fonts */,
@@ -202,6 +217,7 @@
 		740C36402AB0A015009461F4 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				74863F1E2AB5B9BF00763F1C /* anim_loading.json */,
 				740C36A62AB0A59E009461F4 /* EmailService.swift */,
 				740C36412AB0A015009461F4 /* Constants.swift */,
 				740C36422AB0A015009461F4 /* DAppMessagesManage.swift */,
@@ -238,6 +254,8 @@
 				740C36502AB0A015009461F4 /* MyDiaryVC.xib */,
 				740C36552AB0A015009461F4 /* StatisticsVC.swift */,
 				740C36572AB0A015009461F4 /* StatisticsVC.xib */,
+				74863F1B2AB5B98B00763F1C /* SplashVC.swift */,
+				74863F1A2AB5B98B00763F1C /* SplashVC.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -249,8 +267,10 @@
 				740C365E2AB0A015009461F4 /* PView.swift */,
 				740C36622AB0A015009461F4 /* LoadingView.swift */,
 				740C365F2AB0A015009461F4 /* LoadingView.xib */,
-				740C36602AB0A015009461F4 /* FsWipeView.xib */,
 				740C36612AB0A015009461F4 /* FsWipeView.swift */,
+				740C36602AB0A015009461F4 /* FsWipeView.xib */,
+				74863F172AB5B8FE00763F1C /* NativeSmallAdView.swift */,
+				74863F162AB5B8FE00763F1C /* NativeSmallAdView.xib */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -317,6 +337,15 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		74863F112AB5B8EA00763F1C /* Ads */ = {
+			isa = PBXGroup;
+			children = (
+				74863F122AB5B8EA00763F1C /* AdmodOpen.swift */,
+				74863F132AB5B8EA00763F1C /* AdmodSplash.swift */,
+			);
+			path = Ads;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -329,6 +358,7 @@
 				740C36232AB09D69009461F4 /* Frameworks */,
 				740C36242AB09D69009461F4 /* Resources */,
 				EDCC40BB08C4D3327F14E12F /* [CP] Embed Pods Frameworks */,
+				1A3232F19B2CD1D7CBE6B55A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -381,12 +411,14 @@
 				740C369E2AB0A015009461F4 /* Mali-Medium.ttf in Resources */,
 				740C369A2AB0A015009461F4 /* StickerCell.xib in Resources */,
 				740C369D2AB0A015009461F4 /* SeachCell.xib in Resources */,
+				74863F182AB5B8FE00763F1C /* NativeSmallAdView.xib in Resources */,
 				740C36822AB0A015009461F4 /* MoveDiaryVC.xib in Resources */,
 				740C36852AB0A015009461F4 /* NoteVC.xib in Resources */,
 				740C36A22AB0A015009461F4 /* Mali-Bold.ttf in Resources */,
 				740C368A2AB0A015009461F4 /* SettingVC.xib in Resources */,
 				740C36362AB09D6A009461F4 /* LaunchScreen.storyboard in Resources */,
 				740C36A12AB0A015009461F4 /* Mali-SemiBoldItalic.ttf in Resources */,
+				74863F1F2AB5B9BF00763F1C /* anim_loading.json in Resources */,
 				740C36882AB0A015009461F4 /* ChooseMoveVC.xib in Resources */,
 				740C36782AB0A015009461F4 /* DatePickerSheetVC.xib in Resources */,
 				740C36A02AB0A015009461F4 /* Mali-SemiBold.ttf in Resources */,
@@ -395,6 +427,7 @@
 				740C369F2AB0A015009461F4 /* Mali-Regular.ttf in Resources */,
 				740C367D2AB0A015009461F4 /* loading.json in Resources */,
 				740C36862AB0A015009461F4 /* MyDiaryVC.xib in Resources */,
+				74863F1C2AB5B98B00763F1C /* SplashVC.xib in Resources */,
 				740C36922AB0A015009461F4 /* LoadingView.xib in Resources */,
 				740C368D2AB0A015009461F4 /* StatisticsVC.xib in Resources */,
 				740C36332AB09D6A009461F4 /* Assets.xcassets in Resources */,
@@ -404,6 +437,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1A3232F19B2CD1D7CBE6B55A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fzofil/Pods-Fzofil-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fzofil/Pods-Fzofil-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fzofil/Pods-Fzofil-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A45DAECE45214ACACB790E8F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -451,9 +501,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				740C362A2AB09D69009461F4 /* AppDelegate.swift in Sources */,
+				74863F142AB5B8EA00763F1C /* AdmodOpen.swift in Sources */,
 				740C36912AB0A015009461F4 /* PView.swift in Sources */,
 				740C367A2AB0A015009461F4 /* DAppMessagesManage.swift in Sources */,
+				74863F152AB5B8EA00763F1C /* AdmodSplash.swift in Sources */,
 				740C369B2AB0A015009461F4 /* MyDiaryCell.swift in Sources */,
+				74863F1D2AB5B98B00763F1C /* SplashVC.swift in Sources */,
 				740C36952AB0A015009461F4 /* LoadingView.swift in Sources */,
 				740C368F2AB0A015009461F4 /* JPieChart.swift in Sources */,
 				740C36812AB0A015009461F4 /* NoteVC.swift in Sources */,
@@ -474,6 +527,7 @@
 				740C36992AB0A015009461F4 /* StickerCell.swift in Sources */,
 				740C36872AB0A015009461F4 /* SearchVC.swift in Sources */,
 				740C36A42AB0A015009461F4 /* DApiManager.swift in Sources */,
+				74863F192AB5B8FE00763F1C /* NativeSmallAdView.swift in Sources */,
 				740C36942AB0A015009461F4 /* FsWipeView.swift in Sources */,
 				740C367E2AB0A015009461F4 /* ChooseMoveVC.swift in Sources */,
 				740C367C2AB0A015009461F4 /* ActivityEx.swift in Sources */,
@@ -624,6 +678,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Fzofil/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Fzofil;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized ads to you.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -654,6 +709,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Fzofil/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Fzofil;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized ads to you.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

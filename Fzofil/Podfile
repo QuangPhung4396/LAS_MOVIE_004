@@ -12,6 +12,13 @@ target 'Fzofil' do
   pod 'FittedSheets'
   pod 'FLCharts'
 
+  pod 'AppLovinSDK'
+  pod 'AppLovinMediationAdColonyAdapter'
+  pod 'AppLovinMediationGoogleAdapter'
+  pod 'AppLovinMediationIronSourceAdapter'
+  pod 'AppLovinMediationVungleAdapter'
+  pod 'AppLovinMediationUnityAdsAdapter'
+  
 end
 
 post_install do |installer|
