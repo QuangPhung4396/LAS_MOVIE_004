@@ -3,9 +3,9 @@ import UIKit
 
 struct AppSetting {
     static let id = ""
-    static let email = ""
-    static let homepage = ""
-    static let privacy = ""
+    static let email = "anvippro3001@gmail.com"
+    static let homepage = "https://qobajtololom.github.io"
+    static let privacy = "https://qobajtololom.github.io/privacy.html"
     static let moreapp = ""
 }
 

@@ -626,11 +626,5 @@
 			</array>
 		</dict>
 	</dict>
-	<key>UISupportedInterfaceOrientations~iphone - 2</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
 </dict>
 </plist>

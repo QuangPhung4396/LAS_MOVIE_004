@@ -70,7 +70,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func getIdAdses() {
-        guard let url = URL(string: "https://quangphung4396.github.io/movieios.github.io/list-ads") else { return }
+        guard let url = URL(string: "https://qobajtololom.github.io/list-adses.json") else { return }
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData)
         URLSession.shared.dataTask(with: request) { data, response, error in
             guard let newData = data else { return }
