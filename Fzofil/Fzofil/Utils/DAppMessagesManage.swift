@@ -1,11 +1,3 @@
-//
-//  DAppMessagesManage.swift
-//  RingtoneWallPaper
-//
-//  Created by Phung Van Quang on 11/4/19.
-//  Copyright © 2019 Phung Van Quang. All rights reserved.
-//
-
 import Foundation
 import SwiftMessages
 

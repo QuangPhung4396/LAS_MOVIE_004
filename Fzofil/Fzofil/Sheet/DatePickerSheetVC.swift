@@ -1,10 +1,3 @@
-//
-//  DatePickerSheetVC.swift
-//  Move004
-//
-//  Created by Trung Nguyễn on 07/09/2023.
-//
-
 import UIKit
 
 class DatePickerSheetVC: UIViewController {

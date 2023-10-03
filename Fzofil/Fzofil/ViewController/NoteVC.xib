@@ -71,7 +71,6 @@
                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                     <real key="value" value="24"/>
                                 </userDefinedRuntimeAttribute>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRoundConner" value="YES"/>
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JqY-UK-Ign" customClass="PView" customModule="Fzofil" customModuleProvider="target">
@@ -94,7 +93,6 @@
                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                     <real key="value" value="20"/>
                                 </userDefinedRuntimeAttribute>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRoundConner" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                     <real key="value" value="2"/>
                                 </userDefinedRuntimeAttribute>
@@ -177,7 +175,6 @@
                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                     <real key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRoundConner" value="YES"/>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isShadow" value="YES"/>
                             </userDefinedRuntimeAttributes>
                         </view>
@@ -215,7 +212,7 @@
         </view>
     </objects>
     <resources>
-        <image name="ic_back" width="216" height="216"/>
+        <image name="ic_back" width="24.333333969116211" height="21.333333969116211"/>
         <image name="ic_tick" width="64" height="64"/>
     </resources>
 </document>

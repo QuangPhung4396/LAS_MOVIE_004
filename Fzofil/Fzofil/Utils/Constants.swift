@@ -1,10 +1,3 @@
-//
-//  Constants.swift
-//  Move004
-//
-//  Created by apple on 06/09/2023.
-//
-
 import Foundation
 public let NAME_FILE_EDIT_SAVE = "list_move_save.json"
 

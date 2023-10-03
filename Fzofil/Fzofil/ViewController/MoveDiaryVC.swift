@@ -1,15 +1,8 @@
-//
-//  MoveDiaryVC.swift
-//  Move004
-//
-//  Created by apple on 05/09/2023.
-//
-
 import UIKit
-import FSPagerView
 import GoogleMobileAds
 
 class MoveDiaryVC: BaseViewController,FSPagerViewDataSource,FSPagerViewDelegate,UIScrollViewDelegate{
+    
     private var photos: [DMoviesDetail] = []
     var page = Int(arc4random_uniform(100))
     
@@ -18,7 +11,7 @@ class MoveDiaryVC: BaseViewController,FSPagerViewDataSource,FSPagerViewDelegate,
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var pagerView: FSPagerView! {
         didSet {
-            self.pagerView.register(FSPagerViewCell.self, forCellWithReuseIdentifier: "cell")
+            self.pagerView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         }
     }
     
@@ -33,8 +26,6 @@ class MoveDiaryVC: BaseViewController,FSPagerViewDataSource,FSPagerViewDelegate,
         pagerView.delegate = self
         pagerView.dataSource = self
         self.pagerView.transformer = FSPagerViewTransformer(type:.zoomOut)
-        self.pagerView.itemSize = FSPagerView.automaticSize
-        self.pagerView.decelerationDistance = 1
         if(isPad()) {
             leadingPagerContrant.constant = 120
             trailingPagerContrant.constant = 120
@@ -84,7 +75,7 @@ class MoveDiaryVC: BaseViewController,FSPagerViewDataSource,FSPagerViewDelegate,
         return self.photos.count
     }
     
-    public func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSPagerViewCell {
+    func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> UICollectionViewCell {
         let cell = pagerView.dequeueReusableCell(withReuseIdentifier: "cell", at: index)
         let model = self.photos[index]
         let uiView = FsWipeView(frame: CGRect(x: 0, y: 0, width: self.pagerView.layer.frame.size.width, height: self.pagerView.layer.frame.size.height))
@@ -98,11 +89,7 @@ class MoveDiaryVC: BaseViewController,FSPagerViewDataSource,FSPagerViewDelegate,
         pagerView.deselectItem(at: index, animated: true)
         pagerView.scrollToItem(at: index, animated: true)
     }
-  
-    func pagerViewWillEndDragging(_ pagerView: FSPagerView, targetIndex: Int) {
-        let moveItem = self.photos[targetIndex]
-        lblName.text = moveItem.title
-    }
+
     func pagerView(_ pagerView: FSPagerView, didHighlightItemAt index: Int) {
         let moveItem = self.photos[index]
         let vc = ChooseMoveVC()
@@ -110,7 +97,7 @@ class MoveDiaryVC: BaseViewController,FSPagerViewDataSource,FSPagerViewDelegate,
         self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func actionSeach(_ sender: Any) {
-        let vc = SearchVC()
+        let vc = SearchMoveVC()
         self.navigationController?.pushViewController(vc, animated: true)
     }
 

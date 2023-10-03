@@ -1,11 +1,3 @@
-//
-//  DMoviesDetail.swift
-//  MovieIOS
-//
-//  Created by Phung Van Quang on 11/26/19.
-//  Copyright © 2019 Phung Van Quang. All rights reserved.
-//
-
 import UIKit
 
 class DMoviesDetail: NSObject {

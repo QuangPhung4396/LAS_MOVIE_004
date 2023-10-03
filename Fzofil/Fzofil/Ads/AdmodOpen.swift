@@ -1,9 +1,3 @@
-//
-//  AdmodOpen.swift
-//
-//  Copyright © 2021 Phung Van Quang. All rights reserved.
-//
-
 import UIKit
 import GoogleMobileAds
 import AppTrackingTransparency

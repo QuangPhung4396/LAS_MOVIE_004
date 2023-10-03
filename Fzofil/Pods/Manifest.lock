@@ -16,9 +16,9 @@ PODS:
     - AppLovinSDK
     - VungleAds (= 7.0.1)
   - AppLovinSDK (11.11.3)
+  - CryptoSwift (1.8.0)
   - FittedSheets (2.6.0)
   - FLCharts (1.9.0)
-  - FSPagerView (0.8.3)
   - Google-Mobile-Ads-SDK (10.10.0):
     - GoogleAppMeasurement (< 11.0, >= 7.0)
     - GoogleUserMessagingPlatform (>= 1.1)
@@ -69,11 +69,21 @@ PODS:
   - nanopb/decode (2.30909.0)
   - nanopb/encode (2.30909.0)
   - PromisesObjC (2.3.1)
+  - Realm (10.42.1):
+    - Realm/Headers (= 10.42.1)
+  - Realm/Headers (10.42.1)
+  - RealmSwift (10.42.1):
+    - Realm (= 10.42.1)
+  - SDWebImage (5.18.0):
+    - SDWebImage/Core (= 5.18.0)
+  - SDWebImage/Core (5.18.0)
   - SwiftMessages (9.0.6):
     - SwiftMessages/App (= 9.0.6)
   - SwiftMessages/App (9.0.6)
+  - SwiftSoup (2.6.1)
   - UnityAds (4.8.0)
   - VungleAds (7.0.1)
+  - Zip (2.1.2)
 
 DEPENDENCIES:
   - AppLovinMediationAdColonyAdapter
@@ -82,12 +92,16 @@ DEPENDENCIES:
   - AppLovinMediationUnityAdsAdapter
   - AppLovinMediationVungleAdapter
   - AppLovinSDK
+  - CryptoSwift
   - FittedSheets
   - FLCharts
-  - FSPagerView
   - Kingfisher (~> 7.0)
   - lottie-ios
+  - RealmSwift
+  - SDWebImage
   - SwiftMessages
+  - SwiftSoup
+  - Zip
 
 SPEC REPOS:
   trunk:
@@ -98,9 +112,9 @@ SPEC REPOS:
     - AppLovinMediationUnityAdsAdapter
     - AppLovinMediationVungleAdapter
     - AppLovinSDK
+    - CryptoSwift
     - FittedSheets
     - FLCharts
-    - FSPagerView
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
     - GoogleUserMessagingPlatform
@@ -110,9 +124,14 @@ SPEC REPOS:
     - lottie-ios
     - nanopb
     - PromisesObjC
+    - Realm
+    - RealmSwift
+    - SDWebImage
     - SwiftMessages
+    - SwiftSoup
     - UnityAds
     - VungleAds
+    - Zip
 
 SPEC CHECKSUMS:
   AdColony: 4f3738dc633d7aaa8ec60729df973076cc8e97ed
@@ -122,9 +141,9 @@ SPEC CHECKSUMS:
   AppLovinMediationUnityAdsAdapter: b372cde7ee94362aed39cc4bf46408cd978f35d0
   AppLovinMediationVungleAdapter: fa3e9ef18d47419db9cbabdcc7662ada68b8d9f8
   AppLovinSDK: 623ef78363c0dd2c3ff5446cde37e4920a96b7e0
+  CryptoSwift: 52aaf3fce7337552863b1d952e408085f0e65030
   FittedSheets: 561d09f610edc687f13733ed85357813d8732225
   FLCharts: 32914f511a56b6698e030efe0315a320dbb6428e
-  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
   Google-Mobile-Ads-SDK: 509e53bd31c6accb2d9c33b0eb66df1d54dda622
   GoogleAppMeasurement: 7fee012a868315d418f365fbc8d394d8e020e749
   GoogleUserMessagingPlatform: dce302b8f1b84d6e945812ee7a15c3f65a102cbf
@@ -134,10 +153,15 @@ SPEC CHECKSUMS:
   lottie-ios: 809ecf2d460ed650a6aed7aa88b2ec45fab4779c
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   PromisesObjC: c50d2056b5253dadbd6c2bea79b0674bd5a52fa4
+  Realm: f433b80a05f68575e88364d6fcc6234965ccc5af
+  RealmSwift: 757e1416e2314f7e1543abdb2aa65b311d7b6545
+  SDWebImage: 182830bcddc30cde95fbc60dfe4badc3553d94ba
   SwiftMessages: f0c7ef4705a570ad6c5e208b611f4333e660ed92
+  SwiftSoup: 5dd2c1b06afc964f30d99894af6ede22ede627aa
   UnityAds: 390144b2029ac9ce2ec81c3cfd0007686b59236a
   VungleAds: 49e2cbb981c1efa0086029d2dcec8a7322105809
+  Zip: b3fef584b147b6e582b2256a9815c897d60ddc67
 
-PODFILE CHECKSUM: 24ecdcd9cbb29adc0127c179550c124f9003fcfb
+PODFILE CHECKSUM: 74d122936a36b39176e554ef02d81896869a9835
 
 COCOAPODS: 1.12.1

@@ -1,10 +1,3 @@
-//
-//  StatisticsVC.swift
-//  Move004
-//
-//  Created by apple on 05/09/2023.
-//
-
 import UIKit
 import FLCharts
 

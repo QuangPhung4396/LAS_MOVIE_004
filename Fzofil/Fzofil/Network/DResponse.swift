@@ -1,10 +1,3 @@
-//
-//  Dresponse.swift
-//  demo3
-//
-//  Created by apple on 29/08/2022.
-//
-
 import CoreGraphics
 
 

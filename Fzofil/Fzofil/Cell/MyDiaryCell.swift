@@ -1,10 +1,3 @@
-//
-//  MyDiaryCell.swift
-//  Move004
-//
-//  Created by apple on 07/09/2023.
-//
-
 import UIKit
 
 class MyDiaryCell: UITableViewCell {

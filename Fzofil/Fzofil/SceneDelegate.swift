@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  Move004
-//
-//  Created by apple on 05/09/2023.
-//
-
 import UIKit
 
 @available(iOS 13.0, *)
@@ -32,8 +25,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if rootViewController is SplashVC {
             return
         }
-        AdmodOpen.shared.tryToPresentAd()
         
+        if rootViewController is PlayTrailerVC {
+            return
+        }
+        
+        if !AdmobOpenHandle.shared.tryToPresent() {
+            ApplovinOpenHandle.shared.tryToPresent()
+        }
     }
 
     private func topViewControllerWithRootViewController(rootViewController: UIViewController!) -> UIViewController? {

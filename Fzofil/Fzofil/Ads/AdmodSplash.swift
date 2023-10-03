@@ -1,10 +1,3 @@
-//
-//  AdmobInterManage.swift
-//  LASAdvertising
-//
-//  Created by AD on 10/27/21.
-//
-
 import UIKit
 import GoogleMobileAds
 

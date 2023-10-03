@@ -68,7 +68,6 @@
                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                     <real key="value" value="24"/>
                                 </userDefinedRuntimeAttribute>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRoundConner" value="YES"/>
                             </userDefinedRuntimeAttributes>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZF-D6-eKe">
@@ -159,7 +158,6 @@
                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                     <real key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRoundConner" value="YES"/>
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3N-cs-AEg" customClass="PView" customModule="Fzofil" customModuleProvider="target">
@@ -196,11 +194,9 @@
                                 <constraint firstItem="cHc-SD-6Ru" firstAttribute="top" secondItem="W6z-Xz-2H7" secondAttribute="bottom" constant="20" id="qvc-wE-Orl"/>
                             </constraints>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRoundConner" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                     <real key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="isShadow" value="YES"/>
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXn-BX-51l" customClass="PView" customModule="Fzofil" customModuleProvider="target">
@@ -244,7 +240,6 @@
                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                     <real key="value" value="23"/>
                                 </userDefinedRuntimeAttribute>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRoundConner" value="YES"/>
                             </userDefinedRuntimeAttributes>
                         </view>
                     </subviews>
@@ -283,7 +278,7 @@
     </objects>
     <resources>
         <image name="ic_arrow_down" width="48" height="28"/>
-        <image name="ic_back" width="216" height="216"/>
+        <image name="ic_back" width="24.333333969116211" height="21.333333969116211"/>
         <image name="ic_tick" width="64" height="64"/>
         <image name="ic_write_note" width="68" height="80"/>
     </resources>

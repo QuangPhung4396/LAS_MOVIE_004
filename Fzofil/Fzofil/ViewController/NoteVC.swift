@@ -1,10 +1,3 @@
-//
-//  NoteVC.swift
-//  Move004
-//
-//  Created by Trung Nguyễn on 06/09/2023.
-//
-
 import UIKit
 
 class NoteVC: UIViewController, UITextViewDelegate {

@@ -1,10 +1,3 @@
-//
-//  DApiManager.swift
-//  demo3
-//
-//  Created by apple on 30/08/2022.
-//
-
 import Foundation
 import SwiftUI
 

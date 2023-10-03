@@ -1,10 +1,3 @@
-//
-//  FsWipeView.swift
-//  Move004
-//
-//  Created by apple on 05/09/2023.
-//
-
 import Foundation
 import UIKit
 class FsWipeView: UIView {
@@ -24,7 +17,6 @@ class FsWipeView: UIView {
             view.frame = bounds
             view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
             addSubview(view)
-            
         }
     }
 }
