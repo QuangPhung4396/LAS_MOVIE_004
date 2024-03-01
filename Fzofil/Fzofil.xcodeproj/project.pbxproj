@@ -289,6 +289,7 @@
 		74863F1C2AB5B98B00763F1C /* SplashVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74863F1A2AB5B98B00763F1C /* SplashVC.xib */; };
 		74863F1D2AB5B98B00763F1C /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74863F1B2AB5B98B00763F1C /* SplashVC.swift */; };
 		74863F1F2AB5B9BF00763F1C /* anim_loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 74863F1E2AB5B9BF00763F1C /* anim_loading.json */; };
+		74DBA0892B26CCD700803BE1 /* IdfaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DBA0882B26CCD700803BE1 /* IdfaService.swift */; };
 		CE7783ABD080CB7B149960FB /* Pods_Fzofil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B72517D3F49FC2504F15F88E /* Pods_Fzofil.framework */; };
 /* End PBXBuildFile section */
 
@@ -580,6 +581,7 @@
 		74863F1A2AB5B98B00763F1C /* SplashVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashVC.xib; sourceTree = "<group>"; };
 		74863F1B2AB5B98B00763F1C /* SplashVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		74863F1E2AB5B9BF00763F1C /* anim_loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = anim_loading.json; sourceTree = "<group>"; };
+		74DBA0882B26CCD700803BE1 /* IdfaService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdfaService.swift; sourceTree = "<group>"; };
 		B72517D3F49FC2504F15F88E /* Pods_Fzofil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fzofil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1273,6 +1275,7 @@
 				74361CDC2ACC1B5D004E3482 /* DBService.swift */,
 				74361CDD2ACC1B5D004E3482 /* TVShowAPIService.swift */,
 				74361CDE2ACC1B5D004E3482 /* UtilService.swift */,
+				74DBA0882B26CCD700803BE1 /* IdfaService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -1566,6 +1569,7 @@
 				74361DB02ACC1B5D004E3482 /* SettingRootVC.swift in Sources */,
 				74361D2D2ACC1B5D004E3482 /* TopRateTopCell.swift in Sources */,
 				740C368F2AB0A015009461F4 /* JPieChart.swift in Sources */,
+				74DBA0892B26CCD700803BE1 /* IdfaService.swift in Sources */,
 				740C36812AB0A015009461F4 /* NoteVC.swift in Sources */,
 				74361DAA2ACC1B5D004E3482 /* ListMediaVC.swift in Sources */,
 				74361DD42ACC1FC9004E3482 /* SelectionDialogItem.swift in Sources */,

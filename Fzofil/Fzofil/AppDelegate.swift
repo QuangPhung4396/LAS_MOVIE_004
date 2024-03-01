@@ -9,35 +9,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var naviVC: UINavigationController?
     var window: UIWindow?
 
-    private func requestTrackingAuthorization(completion: @escaping () -> Void) {
-        if #available(iOS 14, *) {
-            NotificationCenter.default.addObserver(forName: UIApplication.didBecomeActiveNotification, object: nil, queue: .main, using: { _ in
-                ATTrackingManager.requestTrackingAuthorization { _ in
-                    DispatchQueue.main.async { completion() }
-                }
-            })
-        }
-        else {
-            completion()
-        }
-    }
-    
-    private func startAdService() {
-        AdmobHandle.shared.awake {
-            AdmobOpenHandle.shared.awake()
-        }
-        ApplovinHandle.shared.awake {
-            ApplovinOpenHandle.shared.awake()
-        }
-    }
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         getIdAdses()
         NetworksService.shared.checkChangeTime()
         DBService.shared.setup()
-        requestTrackingAuthorization { [weak self] in
-            self?.startAdService()
+        ApplovinHandle.shared.awake {
+            ApplovinOpenHandle.shared.awake()
         }
         setupRootVC()
         return true
